@@ -1,0 +1,1 @@
+export * from '@/styles/theme/client/components/theme-switcher'
