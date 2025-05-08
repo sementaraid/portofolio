@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="w-full border-t border-border">
       <div className="container mx-auto px-4 py-8">
-        <div className="flex flex-col items-center justify-center gap-4 text-sm text-muted-foreground">
+        <div className="flex flex-col items-center justify-center gap-4 text-sm font-light">
           <p className={cn(
             "text-center",
             geistMono.className

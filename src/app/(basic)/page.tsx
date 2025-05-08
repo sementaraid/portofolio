@@ -10,7 +10,7 @@ export default function Home() {
         "[background-size:200%_auto] animate-[shine_5s_linear_infinite]",
         geistMono.className
       )}>Anantara</h1>
-      <p className="max-w-4xl text-center font-mono font-light leading-relaxed text-sm">
+      <p className="max-w-4xl text-center font-mono leading-relaxed text-sm">
         Welcome to my little corner of the internet! Here, I share my journey as a frontend engineer - the ups, downs, and everything in between. You'll find tutorials, reading materials, and stories about my adventures in code. Join me as I navigate through the exciting (and sometimes silly) world of frontend development.
       </p>
     </div>
