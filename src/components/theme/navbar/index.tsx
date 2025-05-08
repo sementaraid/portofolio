@@ -7,6 +7,15 @@ const Navbar = () => {
   return (
     <div className="flex gap-2 items-center leading-relaxed">
       <Link
+        href={"/"}
+        className={cn(
+          buttonVariants({ variant: "link" }),
+          geistMono.className,
+          'font-light'
+        )}>
+        Home
+      </Link>
+      <Link
         href={"/posts"}
         className={cn(
           buttonVariants({ variant: "link" }),
@@ -15,14 +24,14 @@ const Navbar = () => {
         )}>
         Posts
       </Link>
-      <Link 
-        href={"/about-me"} 
+      <Link
+        href={"/about-me"}
         className={cn(
           buttonVariants({ variant: "link" }),
           geistMono.className,
           'font-light'
         )}>
-          About Me
+        About Me
       </Link>
     </div>
   )

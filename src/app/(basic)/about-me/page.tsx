@@ -4,7 +4,7 @@ import { Linkedin } from "lucide-react";
 const AboutMe = () => {
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
-      <h1 className="text-4xl font-bold text-primary mb-6">About Me</h1>
+      <h1 className="text-4xl font-bold text-primary mb-6 font-mono">About Me</h1>
       
       <div className="flex flex-col md:flex-row gap-8 mb-10">
         <div className="md:w-1/3">
