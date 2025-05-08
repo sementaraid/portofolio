@@ -70,7 +70,47 @@ const AboutMe = () => {
         </div>
       </div>
 
+
       <div className="flex flex-col gap-6 mb-10">
+        <div className="pb-6 border-b">
+          <h3 className="text-xl font-semibold mb-3">Experience</h3>
+          
+          <div className="mb-6">
+            <p className="font-medium">HYSN PTE.LTD</p>
+            <p className="font-mono text-sm mb-2">Senior Frontend Engineer • Singapore • March 2023 - Present</p>
+            <ul className="list-disc list-inside font-mono text-sm space-y-1">
+              <li>Led the successful migration from React.js to Next.js framework, improving application performance with server-side rendering</li>
+              <li>Developed and implemented responsive web interfaces using React.js and TypeScript</li>
+              <li>Established and implemented a comprehensive UI design system using shadcn/ui</li>
+              <li>Optimized build processes by implementing Next.js standalone mode and CDN integration</li>
+              <li>Developed comprehensive onboarding flows for new customers</li>
+              <li>Implemented comprehensive testing infrastructure using Jest and Playwright</li>
+            </ul>
+          </div>
+
+          <div className="mb-6">
+            <p className="font-medium">ICUBE BY SIRCLO</p>
+            <p className="font-mono text-sm mb-2">Associate Frontend Engineer • Jakarta, Indonesia • April 2019 - March 2023</p>
+            <ul className="list-disc list-inside font-mono text-sm space-y-1">
+              <li>Developed and maintained multiple e-commerce websites using Magento 2</li>
+              <li>Built reusable Magento UI components and custom modules</li>
+              <li>Developed custom checkout plugins using React.js integrated with Magento 2</li>
+              <li>Implemented GraphQL API integrations for Magento 2 frontend applications</li>
+              <li>Pioneered development of custom Magento 2 storefront theme using Next.js</li>
+            </ul>
+          </div>
+
+          <div>
+            <p className="font-medium">Business Placement Center Amikom Yogyakarta</p>
+            <p className="font-mono text-sm mb-2">Frontend Developer • Yogyakarta, Indonesia • January 2018 - April 2019</p>
+            <ul className="list-disc list-inside font-mono text-sm space-y-1">
+              <li>Developed alumni tracking portal using CodeIgniter PHP framework</li>
+              <li>Implemented responsive user interfaces with jQuery and Bootstrap</li>
+              <li>Created dynamic forms and interactive features using AJAX</li>
+            </ul>
+          </div>
+        </div>
+
         <div className="pb-6 border-b">
           <h3 className="text-xl font-semibold mb-3">Education</h3>
           <p className="font-medium">Bachelor of Informatics</p>
