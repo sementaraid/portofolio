@@ -1,5 +1,6 @@
 import { Settings } from "@/config";
 import { cookies } from "next/headers";
+import { ThemeInitialState } from "@/styles/theme/types";
 
 type GetCookiesReturnedValue = ThemeInitialState | undefined
 

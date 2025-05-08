@@ -2,7 +2,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { geistMono, geistSans } from "@/styles/fonts";
-import { getCookies } from "@/styles/theme";
 import { cn } from "@/lib/utils";
 import { ThemeSwitcherProvider } from "@/styles/theme/client/context";
 import { getThemeCookieHeader } from "@/styles/theme/server/getThemeCookieHeader";

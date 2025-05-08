@@ -1,6 +1,4 @@
-import { geistMono } from "@/styles/fonts"
 import { ThemeSwitcher } from "@/styles/theme"
-import { cn } from "@/lib/utils"
 import { ReactNode } from "react"
 import { Navbar } from "@/components/theme/navbar"
 import Footer from "@/components/theme/footer"

@@ -2,6 +2,7 @@
 
 import { createContext, ReactNode, RefObject, useContext, useRef } from "react"
 import { create, StoreApi, UseBoundStore, useStore } from 'zustand'
+import { ThemeAction, ThemeInitialState, ThemeState } from "@/styles/theme/types";
 
 type Theme = ThemeState & ThemeAction
 type ThemeSwitcherProviderProps = Readonly<{

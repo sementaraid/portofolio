@@ -1,9 +1,9 @@
-type ThemeInitialState = 'light' | 'dark' | 'system'
+export type ThemeInitialState = 'light' | 'dark' | 'system'
 
-type ThemeState = {
+export type ThemeState = {
   theme: ThemeInitialState
 }
 
-type ThemeAction = {
+export type ThemeAction = {
   setTheme: (nextTheme: ThemeState['theme'] | ((currentTheme: ThemeState['theme']) => ThemeState['theme'])) => void
 }

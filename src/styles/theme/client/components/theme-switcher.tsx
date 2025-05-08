@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { setCookies } from "@/helper/cookies";
 import { Settings } from "@/config";
 import { useThemeSwitcher } from "@/styles/theme/client/context";
+import { ThemeInitialState } from "@/styles/theme/types";
 
 const ThemeSwitcher = () => {
   const { theme, setTheme } = useThemeSwitcher(state => state)
