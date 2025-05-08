@@ -8,7 +8,7 @@ import { getThemeCookieHeader } from "@/styles/theme/server/getThemeCookieHeader
 
 export const metadata: Metadata = {
   title: "Anantara Blog",
-  description: "Life journey of junior frontend developer",
+  description: "Life journey of silly frontend developer",
 };
 
 export default async function RootLayout({
