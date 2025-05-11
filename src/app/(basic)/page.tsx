@@ -8,7 +8,7 @@ const Home = () => {
     <div className="relative px-4 md:px-0">
       <CenterGlow className="absolute z-[-3] w-full top-[-150px] scale-[0.4]" />
       <div className="text-center max-w-4xl m-auto px-4">
-        <h1 className={"font-poppins text-[6rem] text-center font-[500]"}>Anantara</h1>
+        <h1 className={"font-poppins text-[4rem] text-center font-[600]"}>Anantara</h1>
         <div className="relative my-16">
           <Brush className="absolute top-[-60px] right-0 md:right-56 m-auto mb-16" />
         </div>
