@@ -3,7 +3,7 @@ import { geistMono } from "@/styles/fonts";
 
 const Footer = () => {
   return (
-    <footer className="w-full border-t border-border">
+    <footer className="w-full">
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col items-center justify-center gap-4 text-sm font-light">
           <p className={cn(

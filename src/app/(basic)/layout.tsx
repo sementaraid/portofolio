@@ -2,6 +2,7 @@ import { ThemeSwitcher } from "@/styles/theme"
 import { ReactNode } from "react"
 import { Navbar } from "@/components/theme/navbar"
 import HeaderGlow from "@/components/assets/svgs/header-glow"
+import Footer from "@/components/theme/footer"
 
 type LayoutProps = Readonly<{
   children: ReactNode
@@ -20,6 +21,7 @@ const Layout = ({ children }: LayoutProps) => {
         </div>
       </div>
       {children}
+      <Footer/>
     </>
   )
 }
