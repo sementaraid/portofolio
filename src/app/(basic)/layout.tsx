@@ -1,7 +1,7 @@
 import { ThemeSwitcher } from "@/styles/theme"
 import { ReactNode } from "react"
 import { Navbar } from "@/components/theme/navbar"
-import Footer from "@/components/theme/footer"
+import HeaderGlow from "@/components/assets/svgs/header-glow"
 
 type LayoutProps = Readonly<{
   children: ReactNode
@@ -9,17 +9,18 @@ type LayoutProps = Readonly<{
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="max-w-3xl m-auto px-4">
-      <div className="flex justify-between py-8">
-        <span/>
-        <div className="flex gap-2 items-center">
-          <Navbar/>
-          <ThemeSwitcher/>
+    <>
+      <div className="relative w-full">
+        <HeaderGlow className="absolute z-[-1] w-full"/>
+        <div className="flex justify-center py-8">
+          <div className="flex gap-2 items-center shadow-lg rounded-full p-2 bg-transparent backdrop-blur supports-[backdrop-filter]:bg-blue-500/5 border border-white/20 dark:border-white/10">
+            <Navbar />
+            <ThemeSwitcher />
+          </div>
         </div>
       </div>
       {children}
-      <Footer/>
-    </div>
+    </>
   )
 }
 

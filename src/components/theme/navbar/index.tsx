@@ -1,38 +1,38 @@
+import { AnantaraLink } from "@/components/lib/link";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { geistMono } from "@/styles/fonts";
-import Link from "next/link";
+import { openSans } from "@/styles/fonts";
 
 const Navbar = () => {
   return (
-    <div className="flex gap-2 items-center leading-relaxed">
-      <Link
+    <div className="flex items-center leading-relaxed gap-1">
+      <AnantaraLink
         href={"/"}
         className={cn(
-          buttonVariants({ variant: "link" }),
-          geistMono.className,
-          'font-light'
+          buttonVariants({ variant: "default" }),
+          openSans.className,
+          'text-sm rounded-full font-semibold shadow-none'
         )}>
-        Home
-      </Link>
-      <Link
-        href={"/posts"}
+        Welcome
+      </AnantaraLink>
+      <AnantaraLink
+        href={"/show-case"}
         className={cn(
-          buttonVariants({ variant: "link" }),
-          geistMono.className,
-          'font-light'
+          buttonVariants({ variant: "default" }),
+          openSans.className,
+          'text-sm rounded-full font-semibold shadow-none'
         )}>
-        Posts
-      </Link>
-      <Link
+        Show case
+      </AnantaraLink>
+      <AnantaraLink
         href={"/about-me"}
         className={cn(
-          buttonVariants({ variant: "link" }),
-          geistMono.className,
-          'font-light'
+          buttonVariants({ variant: "default" }),
+          openSans.className,
+          'text-sm rounded-full font-semibold shadow-none'
         )}>
-        About Me
-      </Link>
+        About me
+      </AnantaraLink>
     </div>
   )
 }

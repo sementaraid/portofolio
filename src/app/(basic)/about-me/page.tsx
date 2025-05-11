@@ -40,7 +40,7 @@ const AboutMe = () => {
 
         <div className="md:w-2/3">
           <h2 className="text-2xl font-semibold mb-4">Herlina Sunaryanto</h2>
-          <p className="mb-6 font-mono text-sm">
+          <p className="mb-6 font-mono text-sm leading-relaxed font-light">
             Results-driven Senior Frontend Engineer with over 5 years of experience in building high-performance web applications.
             Demonstrated expertise in Next.js, React.js, and TypeScript, with a proven track record of improving application
             performance through server-side rendering and optimized build processes.
@@ -48,7 +48,7 @@ const AboutMe = () => {
 
           <div className="mb-8">
             <h3 className="text-xl font-medium mb-3">Professional Journey</h3>
-            <p className="mb-4 font-mono text-sm">
+            <p className="mb-4 font-mono text-sm leading-relaxed font-light">
               My career began at Business Placement Center Amikom Yogyakarta, where I developed an alumni tracking portal.
               I later joined ICUBE BY SIRCLO as an Associate Frontend Engineer, working extensively with Magento 2 and
               implementing custom features for e-commerce websites. Currently, I'm a Senior Frontend Engineer at HYSN PTE.LTD
@@ -60,7 +60,7 @@ const AboutMe = () => {
             <h3 className="text-xl font-medium mb-3">Notable Projects</h3>
             <div className="mb-4">
               <h4 className="font-medium">Teramina - AI-Powered Aquaculture Analytics Platform</h4>
-              <p className="font-mono text-sm">
+              <p className="font-mono text-sm leading-relaxed font-light">
                 As a Frontend Developer for Teramina, I worked on a state-of-the-art computational ecological
                 modeling platform for shrimp farming operations. I architected responsive dashboard interfaces
                 and developed interactive data visualization components using React E-chart.js and React-Query.
@@ -78,7 +78,7 @@ const AboutMe = () => {
           <div className="mb-6">
             <p className="font-medium">HYSN PTE.LTD</p>
             <p className="font-mono text-sm mb-2">Senior Frontend Engineer • Singapore • March 2023 - Present</p>
-            <ul className="list-disc list-inside font-mono text-sm space-y-1">
+            <ul className="list-disc list-inside font-mono text-sm space-y-1 leading-relaxed font-light">
               <li>Led the successful migration from React.js to Next.js framework, improving application performance with server-side rendering</li>
               <li>Developed and implemented responsive web interfaces using React.js and TypeScript</li>
               <li>Established and implemented a comprehensive UI design system using shadcn/ui</li>
@@ -91,7 +91,7 @@ const AboutMe = () => {
           <div className="mb-6">
             <p className="font-medium">ICUBE BY SIRCLO</p>
             <p className="font-mono text-sm mb-2">Associate Frontend Engineer • Jakarta, Indonesia • April 2019 - March 2023</p>
-            <ul className="list-disc list-inside font-mono text-sm space-y-1">
+            <ul className="list-disc list-inside font-mono text-sm space-y-1 leading-relaxed font-light">
               <li>Developed and maintained multiple e-commerce websites using Magento 2</li>
               <li>Built reusable Magento UI components and custom modules</li>
               <li>Developed custom checkout plugins using React.js integrated with Magento 2</li>
@@ -103,7 +103,7 @@ const AboutMe = () => {
           <div>
             <p className="font-medium">Business Placement Center Amikom Yogyakarta</p>
             <p className="font-mono text-sm mb-2">Frontend Developer • Yogyakarta, Indonesia • January 2018 - April 2019</p>
-            <ul className="list-disc list-inside font-mono text-sm space-y-1">
+            <ul className="list-disc list-inside font-mono text-sm space-y-1 leading-relaxed font-light">
               <li>Developed alumni tracking portal using CodeIgniter PHP framework</li>
               <li>Implemented responsive user interfaces with jQuery and Bootstrap</li>
               <li>Created dynamic forms and interactive features using AJAX</li>
@@ -114,13 +114,13 @@ const AboutMe = () => {
         <div className="pb-6 border-b">
           <h3 className="text-xl font-semibold mb-3">Education</h3>
           <p className="font-medium">Bachelor of Informatics</p>
-          <p className="font-mono text-sm">Universitas Amikom Yogyakarta (2015 - 2022)</p>
+          <p className="font-mono text-sm leading-relaxed font-light">Universitas Amikom Yogyakarta (2015 - 2022)</p>
           <p className="font-mono text-sm">GPA: 3.72</p>
         </div>
 
         <div className="pb-6 border-b">
           <h3 className="text-xl font-semibold mb-3">Certifications</h3>
-          <p className="font-medium">CASP (Certified API Security Professional)</p>
+          <p className="font-medium leading-relaxed font-light">CASP (Certified API Security Professional)</p>
           <p className="font-mono text-sm">August 2024 - Present</p>
         </div>
       </div>
@@ -130,32 +130,32 @@ const AboutMe = () => {
         <div className="flex flex-col gap-4">
           <div className="pb-4 border-b">
             <h4 className="font-medium mb-2">Programming Languages</h4>
-            <p className="font-mono text-sm">JavaScript, TypeScript, HTML5, CSS3, PHP</p>
+            <p className="font-mono text-sm leading-relaxed font-light">JavaScript, TypeScript, HTML5, CSS3, PHP</p>
           </div>
 
           <div className="pb-4 border-b">
             <h4 className="font-medium mb-2">Frontend Frameworks & Libraries</h4>
-            <p className="font-mono text-sm">React.js, Next.js, jQuery, Bootstrap, Tailwindcss</p>
+            <p className="font-mono text-sm leading-relaxed font-light">React.js, Next.js, jQuery, Bootstrap, Tailwindcss</p>
           </div>
 
           <div className="pb-4 border-b">
             <h4 className="font-medium mb-2">Testing & Quality Assurance</h4>
-            <p className="font-mono text-sm">Jest, Playwright</p>
+            <p className="font-mono text-sm leading-relaxed font-light">Jest, Playwright</p>
           </div>
 
           <div className="pb-4 border-b">
             <h4 className="font-medium mb-2">E-commerce & CMS</h4>
-            <p className="font-mono text-sm">Magento 2, Custom Theme Development, GraphQL</p>
+            <p className="font-mono text-sm leading-relaxed font-light">Magento 2, Custom Theme Development, GraphQL</p>
           </div>
 
           <div className="pb-4 border-b">
             <h4 className="font-medium mb-2">UI/UX</h4>
-            <p className="font-mono text-sm">Ant Design, Material UI, Shadcn</p>
+            <p className="font-mono text-sm leading-relaxed font-light">Ant Design, Material UI, Shadcn</p>
           </div>
 
           <div className="pb-4">
             <h4 className="font-medium mb-2">Data Visualization</h4>
-            <p className="font-mono text-sm">React E-chart.js, React-Query</p>
+            <p className="font-mono text-sm leading-relaxed font-light">React E-chart.js, React-Query</p>
           </div>
         </div>
       </div>

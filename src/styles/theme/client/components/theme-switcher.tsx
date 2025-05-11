@@ -20,6 +20,7 @@ const ThemeSwitcher = () => {
   return (
     <Button
       variant={'ghost'}
+      className="rounded-full"
       onClick={() => handleThemeChange(theme === 'light' ? 'dark' : 'light')}>
       {theme === 'light' ? <Sun /> : <Moon />}
     </Button>
