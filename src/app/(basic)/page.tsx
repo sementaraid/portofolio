@@ -10,7 +10,7 @@ const Home = () => {
       <div className="text-center max-w-4xl m-auto px-4">
         <h1 className={"font-poppins text-[4rem] text-center font-[600]"}>Anantara</h1>
         <div className="relative my-16">
-          <Brush className="absolute top-[-60px] right-0 md:right-56 m-auto mb-16" />
+          <Brush className="w-auto absolute top-[-60px] right-0 sm:right-32 lg:right-56 mb-16" />
         </div>
         <p className="font-poppins text-center leading-relaxed text-muted-foreground font-[400]">
           Welcome to my little corner of the internet! 👋🏽<br />
