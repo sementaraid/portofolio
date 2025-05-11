@@ -4,15 +4,15 @@ const config = {
   darkMode: 'class',
   content: [
     './src/**/*.{ts,tsx}',
+    './mdx-components.tsx'
   ],
   prefix: "",
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-geist-sans)"],
+        sans: ["var(--font-open-sans)"],
         mono: ["var(--font-geist-mono)"],
         inter: ["var(--font-geist-inter)"],
-        ["open-sans"]: ["var(--font-open-sans)"]
       },
       colors: {
         border: "hsl(var(--border))",

@@ -17,6 +17,15 @@ const Navbar = () => {
         Welcome
       </AnantaraLink>
       <AnantaraLink
+        href={"/blogs/introduction"}
+        className={cn(
+          buttonVariants({ variant: "default" }),
+          openSans.className,
+          'text-sm rounded-full font-semibold shadow-none'
+        )}>
+        Blogs
+      </AnantaraLink>
+      {/* <AnantaraLink
         href={"/show-case"}
         className={cn(
           buttonVariants({ variant: "default" }),
@@ -24,7 +33,7 @@ const Navbar = () => {
           'text-sm rounded-full font-semibold shadow-none'
         )}>
         Show case
-      </AnantaraLink>
+      </AnantaraLink> */}
       <AnantaraLink
         href={"/about-me"}
         className={cn(
