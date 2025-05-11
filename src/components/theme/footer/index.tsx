@@ -1,5 +1,5 @@
-import { cn } from "@/lib/utils";
-import { geistMono } from "@/styles/fonts";
+import { geistMono } from "@/components/fonts";
+import { cn } from "@/components/lib/utils";
 
 const Footer = () => {
   return (

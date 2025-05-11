@@ -1,0 +1,1 @@
+export * from '@/components/theme/theme-switcher/components/theme-switcher'

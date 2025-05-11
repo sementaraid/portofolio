@@ -1,8 +1,8 @@
-import { ThemeSwitcher } from "@/styles/theme"
+import { ThemeSwitcher } from "@/components/theme/theme-switcher"
 import { ReactNode } from "react"
 import { Navbar } from "@/components/theme/navbar"
-import HeaderGlow from "@/components/assets/svgs/header-glow"
 import Footer from "@/components/theme/footer"
+import HeaderGlow from "@/assets/svgs/header-glow"
 
 type LayoutProps = Readonly<{
   children: ReactNode

@@ -2,16 +2,22 @@
 
 import { createContext, ReactNode, RefObject, useContext, useRef } from "react"
 import { create, StoreApi, UseBoundStore, useStore } from 'zustand'
-import { ThemeAction, ThemeInitialState, ThemeState } from "@/styles/theme/types";
+import type { Theme } from '@anantara/theme/types'
 
-type Theme = ThemeState & ThemeAction
+type ThemeState = {
+  theme: Theme
+}
+type ThemeAction = {
+  setTheme: (nextTheme: Theme | ((currentTheme: Theme) => Theme)) => void
+}
+type ThemeContext = ThemeState & ThemeAction
 type ThemeSwitcherProviderProps = Readonly<{
   children: ReactNode;
-  initialState: ThemeInitialState
+  initialState: Theme
 }>
 
-const createTheme = (initialState: ThemeInitialState) => create<Theme>()((set) => ({
-  theme: initialState || 'light',
+const createTheme = (initialState: Theme) => create<ThemeContext>()((set) => ({
+  theme: initialState ?? 'light',
   setTheme: (nextTheme) => (
     set((state) => ({
       theme: typeof nextTheme === 'function' ? nextTheme(state.theme) : nextTheme
@@ -19,17 +25,17 @@ const createTheme = (initialState: ThemeInitialState) => create<Theme>()((set) =
   )
 }))
 
-const ThemeSwitcherContext = createContext<UseBoundStore<StoreApi<Theme>> | null>(null)
+const ThemeSwitcherContext = createContext<UseBoundStore<StoreApi<ThemeContext>> | null>(null)
 
-const useThemeSwitcher = <T,>(selector: (state: Theme) => T): T => {
+const useThemeSwitcher = <T = Theme>(selector: (state: ThemeContext) => T): T => {
   const context = useContext(ThemeSwitcherContext)
-  if(!context) throw new Error('useThemeSwitcher must be used under the ThemeSwitcherProvider')
-  
+  if (!context) throw new Error('useThemeSwitcher must be used under the ThemeSwitcherProvider')
+
   return useStore(context, selector)
 }
 
 const ThemeSwitcherProvider = ({ children, initialState }: ThemeSwitcherProviderProps) => {
-  const themeModeRef: RefObject<UseBoundStore<StoreApi<Theme>> | null> = useRef(null)
+  const themeModeRef: RefObject<UseBoundStore<StoreApi<ThemeContext>> | null> = useRef(null)
   themeModeRef.current ??= createTheme(initialState)
 
   return (

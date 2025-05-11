@@ -1,8 +1,9 @@
-import CenterGlow from "@/components/assets/svgs/center-glow"
+
 import { Card, CardContent } from "@/components/ui/card"
 import { BorderBeam } from "@/components/magicui/border-beam";
-import Brush from "@/components/assets/svgs/brush";
 import Image from "next/image";
+import CenterGlow from "@/assets/svgs/center-glow";
+import Brush from "@/assets/svgs/brush";
 
 const slugs = [
   "typescript",

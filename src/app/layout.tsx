@@ -1,9 +1,10 @@
-
 import "./globals.css";
 import type { Metadata } from "next";
-import { cn } from "@/lib/utils";
-import { ThemeSwitcherProvider } from "@/styles/theme/client/context";
-import { getThemeCookieHeader } from "@/styles/theme/server/getThemeCookieHeader";
+import { getCookies } from "@/helper/server/cookies";
+import { ThemeSwitcherProvider } from "@/components/theme/theme-switcher/context";
+import { Settings } from "@/config";
+import { cn } from "@/components/lib/utils";
+import { Theme } from "@anantara/theme/types";
 
 export const metadata: Metadata = {
   title: "Anantara Blog",
@@ -15,7 +16,8 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const theme = await getThemeCookieHeader()
+  const theme = await getCookies(Settings.Cookies.Theme) as Theme ?? 'light'
+
   return (
     <html lang="en">
       <body

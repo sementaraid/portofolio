@@ -1,6 +1,7 @@
 const Settings = {
   Cookies: {
-    Theme: "anantara-theme"
+    Theme: "anantara-theme",
+    Language: "anantara-language"
   },
   Images: {
     RemotePatterns: [

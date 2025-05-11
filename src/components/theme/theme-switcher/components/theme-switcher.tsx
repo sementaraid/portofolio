@@ -2,15 +2,15 @@
 
 import { Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { setCookies } from "@/helper/cookies";
+import { setCookies } from "@/helper/client/cookies";
 import { Settings } from "@/config";
-import { useThemeSwitcher } from "@/styles/theme/client/context";
-import { ThemeInitialState } from "@/styles/theme/types";
+import { Theme } from "@anantara/theme/types";
+import { useThemeSwitcher } from "../context";
 
 const ThemeSwitcher = () => {
   const { theme, setTheme } = useThemeSwitcher(state => state)
 
-  const handleThemeChange = (theme: ThemeInitialState) => {
+  const handleThemeChange = (theme: Theme) => {
     document.body.classList.remove('dark', 'light')
     document.body.classList.add(theme)
     setTheme(theme)

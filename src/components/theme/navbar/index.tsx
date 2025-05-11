@@ -1,7 +1,8 @@
-import { AnantaraLink } from "@/components/lib/link";
-import { buttonVariants } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-import { openSans } from "@/styles/fonts";
+import { openSans } from "@/components/fonts"
+import { cn } from "@/components/lib/utils"
+import { buttonVariants } from "@/components/ui/button"
+import { AnantaraLink } from "@/components/theme/link"
+
 
 const Navbar = () => {
   return (
