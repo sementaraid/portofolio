@@ -13,11 +13,11 @@ export const generateStaticParams = async (): Promise<{
   }))
 }
 
-const BlogDetail = async ({ params }: Readonly<BlogProps>) => {
+const Blogs = async ({ params }: Readonly<BlogProps>) => {
   const { slug } = await params
   const { default: Blog } = await import(`@/directories/blogs/${slug}.mdx`)
 
   return <Blog/>
 }
 
-export default BlogDetail
+export default Blogs

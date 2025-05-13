@@ -14,7 +14,7 @@ const Layout = ({ children }: LayoutProps) => {
       <div className="relative w-full">
         <HeaderGlow className="absolute z-[-1] w-full"/>
         <div className="flex justify-center py-8">
-          <div className="flex gap-2 items-center shadow-lg rounded-full p-2 bg-transparent backdrop-blur supports-[backdrop-filter]:bg-blue-500/5 border border-white/20 dark:border-white/10">
+          <div className="flex gap-2 items-center shadow-lg rounded-full p-2 bg-transparent backdrop-blur supports-backdrop-filter:bg-blue-500/5 border border-white/20 dark:border-white/10">
             <Navbar />
             <ThemeSwitcher />
           </div>

@@ -15,7 +15,6 @@ const slugs = [
   "nextdotjs",
   "prisma",
   "postgresql",
-  "vercel",
   "jest",
   "docker",
   "git",
@@ -29,32 +28,28 @@ const slugs = [
 const Home = () => {
   return (
     <div className="relative px-4 md:px-0">
-      <CenterGlow className="absolute z-[-3] w-full top-[350px] md:top-[-150px] md:scale-[0.8] left-0" />
-      <div className="text-center max-w-4xl m-auto px-4">
-        <h1 className={"font-poppins text-[4rem] text-center font-[600]"}>Anantara</h1>
-        <div className="relative my-16">
-          <Brush className="w-auto absolute top-[-60px] right-0 sm:right-32 lg:right-56 mb-16" />
-        </div>
-        <p className="font-poppins text-center leading-relaxed text-muted-foreground font-[500] text-lg mb-6">
-          Welcome to my little corner of the internet! 👋🏽
-          Here, I share my journey as a frontend engineer - the ups, downs, and everything in between.
-        </p>
-        <p className="font-poppins text-center leading-relaxed text-muted-foreground font-[500] text-lg">
-          You'll find tutorials, reading materials, and stories about my adventures in code.
-          Join me as I navigate through the exciting (and sometimes silly) world of frontend development.
-        </p>
+      <CenterGlow className="absolute z-[-3] w-full top-[350px] md:top-[-50px] md:scale-[0.25] left-0" />
+      <div className="max-w-[800px] m-auto py-24 text-center">
+        <h1 className="font-poppins text-[6rem] font-semibold tracking-wide">Anantara</h1>
+          <div className="relative my-24">
+            <Brush className="w-auto absolute top-[-100px] right-[180px] " />
+          </div>
+          <p className="font-open-sans text-foreground tracking-[0.4px] mb-6">
+            Welcome to my little corner of the internet! 👋🏽 <br/>
+            Here, I share my journey as a frontend engineer - the ups, downs, and everything in between.
+            You'll find tutorials, reading materials, and stories about my adventures in code.
+            Join me as I navigate through the exciting (and sometimes silly) world of frontend development.
+          </p>
       </div>
-      <div className="max-w-md m-auto relative z-10 mt-16">
-        <Card className="border-0 p-0 backdrop-blur supports-[backdrop-filter]:bg-white-500/1 rounded-[32px]">
-          <BorderBeam size={200} />
-          <CardContent className="p-8">
-            <h2 className="font-poppins text-2xl font-semibold mb-6 text-center bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">Latest Posts</h2>
+      <div className="max-w-md m-auto relative z-10">
+        <Card className="border-0 p-6 group relative flex flex-col justify-between overflow-hidden rounded-4xl bg-background [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] transform-gpu dark:bg-background dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] col-span-3 lg:col-span-2">
+          <BorderBeam size={150} duration={10}/>
+          <CardContent className="p-0">
             <div className="space-y-4">
-
               <h3 className="font-poppins text-xl font-medium group-hover:text-primary transition-colors">
                 Building Accessible React Components
               </h3>
-              <p className="text-muted-foreground mt-2 leading-relaxed text-base">
+              <p className="text-foreground mt-2 text-sm tracking-[0.4px] font-open-sans">
                 Learn how to create React components that are accessible to all users, following WCAG guidelines and best practices.
               </p>
               <div className="flex gap-2 mt-4">
