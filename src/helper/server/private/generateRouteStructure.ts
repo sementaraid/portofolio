@@ -1,7 +1,7 @@
 import { readdir, stat } from "fs/promises"
 import { join } from "path"
 
-const defaultPath = join(process.cwd(), 'src/directories')
+const defaultPath = join(process.cwd(), 'src/directories/blogs')
 const extension = '.mdx'
 
 export async function generateRouteStructure(basePath: string = defaultPath): Promise<string[]> {
@@ -17,7 +17,7 @@ export async function generateRouteStructure(basePath: string = defaultPath): Pr
         const subFiles = await generateRouteStructure(fullPath)
         filePaths.push(...subFiles)
       } else {
-        filePaths.push(fullPath.replace(defaultPath, '').replace(extension, ''))
+        filePaths.push(fullPath.replace(defaultPath, '').replace(extension, '').replace('/',''))
       }
     }
 

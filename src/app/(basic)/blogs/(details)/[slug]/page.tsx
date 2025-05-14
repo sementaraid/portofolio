@@ -4,20 +4,21 @@ type BlogProps = {
   params: Promise<{ slug: string }>
 }
 
+export const dynamicParams = false
 export const generateStaticParams = async (): Promise<{
   slug: string;
 }[]> => {
   const blogs = await generateRouteStructure()
   return blogs.map((blog) => ({
-    slug: blog.replace('/blogs','')
+    slug: blog
   }))
 }
+
 
 const BlogDetail = async ({ params }: Readonly<BlogProps>) => {
   const { slug } = await params
   const { default: Blog } = await import(`@/directories/blogs/${slug}.mdx`)
-
-  return <Blog/>
+  return <Blog key={slug} />
 }
 
 export default BlogDetail

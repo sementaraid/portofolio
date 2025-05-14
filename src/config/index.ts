@@ -5,7 +5,18 @@ const Settings = {
   },
   Images: {
     RemotePatterns: [
-      new URL('https://cdn.simpleicons.org/**')
+      {
+        protocol: 'https',
+        hostname: 'cdn.simpleicons.org',
+        pathname: '/**',
+        port: ''
+      },
+      {
+        protocol: 'https', 
+        hostname: 'img.shields.io',
+        pathname: '/**',
+        port: ''
+      }
     ]
   }
 }
