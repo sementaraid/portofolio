@@ -1,12 +1,10 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { getCookies } from "@/helper/server/cookies";
 import { ThemeSwitcherProvider } from "@/components/theme/theme-switcher/context";
-import { Settings } from "@/config";
 import { cn } from "@/components/lib/utils";
-import { Theme } from "@anantara/theme/types";
 import { openSans, poppins } from "@/components/fonts";
 import { InteractiveGridPattern } from "@/components/magicui/interactive-grid-pattern";
+import { getSanitizedTheme } from "@/helper/server/shared/getSanitizedTheme";
 
 export const metadata: Metadata = {
   title: "Anantara Blog",
@@ -18,7 +16,7 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const theme = await getCookies(Settings.Cookies.Theme) as Theme ?? 'light'
+  const theme = await getSanitizedTheme()
 
   return (
     <html lang="en">

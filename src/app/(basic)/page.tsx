@@ -28,13 +28,13 @@ const slugs = [
 const Home = () => {
   return (
     <div className="relative px-4 md:px-0">
-      <CenterGlow className="absolute z-[-3] w-full top-[350px] md:top-[-50px] md:scale-[0.25] left-0" />
+      <CenterGlow className="absolute z-[-3] w-full top-[500px] md:top-[300px] lg:top-[-100px] md:scale-[0.5] lg:scale-[0.20] left-0" />
       <div className="max-w-[800px] m-auto py-24 text-center">
-        <h1 className="font-poppins text-[6rem] font-semibold tracking-wide">Anantara</h1>
+        <h1 className="font-poppins text-[4rem] md:text-[6rem] font-semibold tracking-wide">Anantara</h1>
           <div className="relative my-24">
             <Brush className="w-auto absolute top-[-100px] right-[180px] " />
           </div>
-          <p className="font-open-sans text-foreground tracking-[0.4px] mb-6">
+          <p className="font-open-sans text-foreground tracking-[0.175px] mb-6">
             Welcome to my little corner of the internet! 👋🏽 <br/>
             Here, I share my journey as a frontend engineer - the ups, downs, and everything in between.
             You'll find tutorials, reading materials, and stories about my adventures in code.
@@ -46,10 +46,10 @@ const Home = () => {
           <BorderBeam size={150} duration={10}/>
           <CardContent className="p-0">
             <div className="space-y-4">
-              <h3 className="font-poppins text-xl font-medium group-hover:text-primary transition-colors">
+              <h3 className="font-poppins text-xl font-semibold group-hover:text-primary transition-colors">
                 Building Accessible React Components
               </h3>
-              <p className="text-foreground mt-2 text-sm tracking-[0.4px] font-open-sans">
+              <p className="text-foreground mt-2 text-sm tracking-[0.175px] font-open-sans">
                 Learn how to create React components that are accessible to all users, following WCAG guidelines and best practices.
               </p>
               <div className="flex gap-2 mt-4">
@@ -60,7 +60,7 @@ const Home = () => {
           </CardContent>
         </Card>
       </div>
-      <div className="flex flex-col gap-4 justify-center items-center my-16">
+      <div className="flex flex-col gap-4 justify-center items-center my-32">
         <div className="flex items-center justify-center gap-4">
           {slugs.slice(9).map((slug) => (
             <Image

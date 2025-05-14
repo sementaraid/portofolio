@@ -18,10 +18,10 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         {...(props as ComponentProps<typeof Image>)}
       />
     ),
-    p: ({ children }) => <p className="text-base text-foreground text-justify font-open-sans">{children}</p>,
-    ul:({ children }) => <ul className="list-disc list-outside ml-4 font-open-sans">{children}</ul>,
-    ol:({ children }) => <ol className="list-decimal list-outside ml-4 font-open-sans">{children}</ol>,
-    li: ({ children }) => <li className="text-base text-foreground font-open-sans">{children}</li>,
+    p: ({ children }) => <p className="text-base text-foreground text-justify font-open-sans tracking-[0.175px]">{children}</p>,
+    ul:({ children }) => <ul className="list-disc list-outside ml-4 font-open-sans tracking-[0.175px]">{children}</ul>,
+    ol:({ children }) => <ol className="list-decimal list-outside ml-4 font-open-sans tracking-[0.175px]">{children}</ol>,
+    li: ({ children }) => <li className="text-base text-foreground font-open-sans tracking-[0.175px]">{children}</li>,
     ...components,
   }
 }

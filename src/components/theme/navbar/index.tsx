@@ -15,7 +15,7 @@ const Navbar = () => {
         Welcome
       </AnantaraLink>
       <AnantaraLink
-        href={"/blogs/introduction"}
+        href={"/blogs"}
         className={cn(
           buttonVariants({ variant: "default" }),
           'text-sm rounded-full font-semibold shadow-none font-open-sans'

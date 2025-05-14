@@ -12,10 +12,3 @@ export const poppins = Poppins({
   subsets: ["latin"],
   display: 'swap'
 });
-
-export const ibmPlexMono = IBM_Plex_Mono({
-  variable: "--font-ibm-plex-mono",
-  weight: ["300", "400", "500", "600", "700"],
-  subsets: ["latin"],
-  display: 'swap'
-});

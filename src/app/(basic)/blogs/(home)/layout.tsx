@@ -3,7 +3,7 @@ type BlogLayoutProps = {
   children: ReactNode
 }
 
-const BlogLayout = ({ children }: Readonly<BlogLayoutProps>) => {
+const BlogHomeLayout = ({ children }: Readonly<BlogLayoutProps>) => {
   return (
     <div className="max-w-[720px] m-auto space-y-6 py-16 px-4">
       {children}
@@ -11,4 +11,4 @@ const BlogLayout = ({ children }: Readonly<BlogLayoutProps>) => {
   )
 }
 
-export default BlogLayout
+export default BlogHomeLayout

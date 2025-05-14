@@ -1,4 +1,4 @@
-import { generateRouteStructure } from "@/helper/server/action"
+import { generateRouteStructure } from "@/helper/server/private/generateRouteStructure"
 
 type BlogProps = {
   params: Promise<{ slug: string }>
