@@ -33,7 +33,7 @@ export default async function RootLayout({
         <ThemeSwitcherProvider initialState={theme ?? 'light'}>
           <InteractiveGridPattern
             className={cn(
-              "z-[-4] [mask-image:linear-gradient(to_bottom_right,white,transparent_60%)]",
+              "z-[-4] [mask-image:linear-gradient(to_bottom,white,transparent_50%)]",
             )}
             width={40}
             height={40}

@@ -15,7 +15,7 @@ export const Typography = ({ children, className, variant = 'p' }: TypographyPro
     h4: "text-xl sm:text-2xl md:text-3xl font-bold text-foreground font-poppins leading-tight",
     h5: "text-lg sm:text-xl md:text-2xl font-bold text-foreground font-poppins leading-tight",
     h6: "text-base sm:text-lg md:text-xl font-bold text-foreground font-poppins leading-tight",
-    p: "text-sm sm:text-base text-foreground text-justify font-open-sans tracking-[0.175px]",
+    p: "text-sm sm:text-base text-foreground font-open-sans tracking-[0.175px]",
     ul: "list-disc list-outside ml-5 font-open-sans tracking-[0.175px] text-sm sm:text-base",
     ol: "list-decimal list-outside ml-5 font-open-sans tracking-[0.175px] text-sm sm:text-base",
     li: "text-sm sm:text-base text-foreground font-open-sans tracking-[0.175px]"
@@ -24,7 +24,7 @@ export const Typography = ({ children, className, variant = 'p' }: TypographyPro
   const Component = variant as ElementType
 
   return (
-    <Component className={cn(variants[variant], className)}>
+    <Component className={cn(className, variants[variant])}>
       {children}
     </Component>
   )
