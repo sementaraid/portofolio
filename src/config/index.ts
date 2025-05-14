@@ -1,4 +1,4 @@
-import { RemotePattern } from "next/dist/shared/lib/image-config"
+import type { RemotePattern } from "next/dist/shared/lib/image-config"
 
 const RemotePatterns: Array<URL | RemotePattern> = [
   {
