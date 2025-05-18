@@ -11,10 +11,10 @@ const AboutMe = () => {
           {/* Replace with actual profile image */}
           <div className="relative w-full aspect-square rounded-lg overflow-hidden bg-gray-200">
             <Image
-              src="/profile.PNG"
+              src="/profile.jpeg"
               fill
               alt="Profile"
-              className="absolute inset-0 w-full h-full object-cover scale-[3] translate-y-[-10%]"
+              className="absolute inset-0 w-full h-full object-cover scale-[1]"
             />
           </div>
 

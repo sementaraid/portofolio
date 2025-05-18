@@ -18,7 +18,7 @@ const RemotePatterns: Array<URL | RemotePattern> = [
     hostname: 'anantara.blog',
     pathname: '/**',
     port: ''
-  }
+  },
 ]
 
 const Settings = {
