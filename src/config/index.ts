@@ -12,6 +12,12 @@ const RemotePatterns: Array<URL | RemotePattern> = [
     hostname: 'img.shields.io',
     pathname: '/**',
     port: ''
+  },
+  {
+    protocol: 'https', 
+    hostname: 'anantara.blog',
+    pathname: '/**',
+    port: ''
   }
 ]
 
