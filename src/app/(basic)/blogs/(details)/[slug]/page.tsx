@@ -1,4 +1,5 @@
 import { generateRouteStructure } from "@/helper/server/private/generateRouteStructure"
+import { notFound } from "next/navigation"
 
 type BlogProps = {
   params: Promise<{ slug: string }>
@@ -17,7 +18,9 @@ export const generateStaticParams = async (): Promise<{
 
 const BlogDetail = async ({ params }: Readonly<BlogProps>) => {
   const { slug } = await params
-  const { default: Blog } = await import(`@/directories/blogs/${slug}.mdx`)
+  const { default: Blog } = await import(`@/directories/blogs/${slug}.mdx`).catch(() => {
+    notFound()
+  })
   return <Blog key={slug} />
 }
 
