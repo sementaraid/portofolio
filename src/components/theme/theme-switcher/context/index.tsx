@@ -1,8 +1,8 @@
 'use client';
 
-import { createContext, ReactNode, RefObject, useContext, useRef } from "react"
-import { create, StoreApi, UseBoundStore, useStore } from 'zustand'
-import type { Theme } from '@anantara/theme/types'
+import { createContext, type ReactNode, type RefObject, useContext, useRef } from "react"
+import { create, type StoreApi, type UseBoundStore, useStore } from 'zustand'
+import { type Theme } from '@anantara/theme/types'
 
 type ThemeState = {
   theme: Theme
@@ -27,11 +27,18 @@ const createTheme = (initialState: Theme) => create<ThemeContext>()((set) => ({
 
 const ThemeSwitcherContext = createContext<UseBoundStore<StoreApi<ThemeContext>> | null>(null)
 
-const useThemeSwitcher = <T = Theme>(selector: (state: ThemeContext) => T): T => {
+const useThemeSwitcherSelector = (): Theme => {
   const context = useContext(ThemeSwitcherContext)
   if (!context) throw new Error('useThemeSwitcher must be used under the ThemeSwitcherProvider')
 
-  return useStore(context, selector)
+  return useStore(context, state => state.theme)
+}
+
+const useThemeSwitcherDispatcher = () => {
+  const context = useContext(ThemeSwitcherContext)
+  if (!context) throw new Error('useThemeSwitcher must be used under the ThemeSwitcherProvider')
+
+  return useStore(context, state => state.setTheme)
 }
 
 const ThemeSwitcherProvider = ({ children, initialState }: ThemeSwitcherProviderProps) => {
@@ -47,5 +54,6 @@ const ThemeSwitcherProvider = ({ children, initialState }: ThemeSwitcherProvider
 
 export {
   ThemeSwitcherProvider,
-  useThemeSwitcher
+  useThemeSwitcherSelector,
+  useThemeSwitcherDispatcher,
 }

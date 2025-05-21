@@ -5,10 +5,11 @@ import { Button } from "@/components/ui/button";
 import { setCookies } from "@/helper/client/cookies";
 import { Settings } from "@/config";
 import { Theme } from "@anantara/theme/types";
-import { useThemeSwitcher } from "../context";
+import { useThemeSwitcherSelector, useThemeSwitcherDispatcher } from "@/components/theme/theme-switcher/context";
 
 const ThemeSwitcher = () => {
-  const { theme, setTheme } = useThemeSwitcher(state => state)
+  const theme = useThemeSwitcherSelector()
+  const setTheme = useThemeSwitcherDispatcher()
 
   const handleThemeChange = (theme: Theme) => {
     document.body.classList.remove('dark', 'light')
